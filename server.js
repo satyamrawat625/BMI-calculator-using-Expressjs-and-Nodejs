@@ -8,8 +8,8 @@ app.get("/",function(req,res) {// if client requests for home page
     res.sendFile(__dirname+"/index.html")//send him whole html page 
 })
 
-app.post("/",function(req,res) {// when client makes post request , change html to thanks for visiting
-    res.send("Thank for visiting")
+app.post("/",function(req,res) {// when client makes post request (although for our current html file this fun will nvr b called
+    res.send("Thank for visiting")//, change html to thanks for visiting
 })
 
 app.get("/bmiCalculator",function(req,res) {//if client requests for bmi calculator 
